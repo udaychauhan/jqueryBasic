@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Bootstrap NavBar Demo</title>
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="navbar.css">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="nav-bar-container">
+
+      <button class="navbar-brand">
+          NavBar
+        </button>
+
+      <button class="nav-button">
+          Home
+        </button>
+
+      <button class="nav-button">
+          Link
+        </button>
+      <div class="dropdown-container">
+        <button class="nav-button dropBtn">
+          Dropdown
+        </button>
+
+        <div class="dropdown-items">
+          <ul class="link-list">
+            <li><a href="#">Item One</a></li>
+            <li> <a href="#">Item Two</a></li>
+            <li><a href="#">Item Three</a></li>
+          </ul>
+        </div>
+        
+      </div>
+        <button class="disabled-button">
+          Disabled
+        </button>
+
+        <div class="search-container">
+          <input type="text" onfocus="this.value=''" placeholder="Search.." class="search-form">
+
+          <button class="nav-button" id="search-button">
+          Search
+        </button>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="navbar.js"></script>
+
+</body>
+
+</html>
